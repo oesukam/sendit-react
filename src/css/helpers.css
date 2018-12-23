@@ -27,3 +27,22 @@
 .content-center {
   justify-content: center;
 }
+
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+
+.plain-list {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.plain-list li {
+  display: inline-block;
+  padding: 0px 5px;
+  margin: 0;
+}
