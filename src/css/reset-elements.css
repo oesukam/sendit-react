@@ -2,9 +2,18 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  color: #555;
 }
 
 button {
   outline: none;
   border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa {
+  color: inherit;
 }
