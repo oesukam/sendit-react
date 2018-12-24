@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './TopHeader.css';
 import brandImage from '../../images/logo.png';
 
@@ -37,24 +38,24 @@ class TopHeader extends Component {
               <nav id="menu-nav" className="nav">
                 <ul>
                   <li className="nav-item">
-                    <a kk="" href="/#/">
+                    <Link to="/">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a kk="" href="/#/create_parcel">
+                    <Link to="/create_parcel">
                       Add parcel
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a kk="" href="/#/my_parcels">
+                    <a path="/my_parcels">
                       My Parcels
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a kk="" href="/#/profile/30f10388-d3c8-48b9-aeed-6baa5be1fc96">
+                    <Link to="/profile/:userId">
                       <i className="fa fa-user mr-5"></i> My Account
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <a href="#" className="logout">
