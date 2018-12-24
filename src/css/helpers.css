@@ -22,9 +22,11 @@
   flex: 1;
 }
 .content-end {
+  display: flex;
   justify-content: flex-end;
 }
 .content-center {
+  display: flex;
   justify-content: center;
 }
 

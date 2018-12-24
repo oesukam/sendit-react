@@ -9,7 +9,7 @@ class TopHeader extends Component {
       <div className="top-nav">
         <div className="top-nav__header">
           <div className="container">
-            <div className="col-9 align-center">
+            <div className="col-9">
               <ul className="plain-list">
                 <li><a href="#"><i className="fa fa-phone"></i> (+250)-000-000-000</a></li>
                 <li><a href="#"><i className="fa fa-envelope"></i> info@sendit.com</a></li>
