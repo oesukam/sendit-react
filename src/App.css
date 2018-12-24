@@ -2,3 +2,7 @@
 @import url('./css/reset-elements.css');
 @import url('./css/grid-layout.css');
 @import url('./css//helpers.css');
+
+.main-content {
+  padding-top: 110px;
+}
