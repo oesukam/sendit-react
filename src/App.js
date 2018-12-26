@@ -11,11 +11,9 @@ class App extends Component {
       <Router>
         <div className="App">
           <TopHeader />
-          <div className="main-content">
             <Switch>
               <Route path="/" exact component={IndexPage} />
             </Switch>
-          </div>
           <BottomFooter />
         </div>
       </Router>

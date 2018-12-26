@@ -53,6 +53,14 @@
   width: 100%;
 }
 
+.is-column {
+  display: flex;
+  flex-direction: column;
+}
+.is-row {
+  display: flex;
+  flex-direction: row;
+}
 @media only screen and (max-width: 500px) {
   .container {
     width: 90%;
