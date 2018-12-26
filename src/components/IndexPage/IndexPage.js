@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Testimonies from './Testimonies/Testimonies';
 import './IndexPage.css';
 
 class IndexPage extends Component {
   state = {  }
   render() {
     return (
-      <div className="main-content">
+      <div className="">
         <div className="intro-area">
           <div className="container">
             <div className="row">
@@ -22,6 +23,7 @@ class IndexPage extends Component {
             </div>
           </div>
         </div>
+        <Testimonies />
       </div>
     );
   }
