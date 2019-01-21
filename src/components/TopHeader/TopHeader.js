@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { toggleMenu } from '../../store/actions';
 import './TopHeader.css';
 import brandImage from '../../images/logo.png';
 
 class TopHeader extends Component {
+  constructor(props) {
+    super(props);
+  }
+  toggleButton = () => this.props.toggleMenu()
+
   render() {
     return (
       <div className="top-nav">
@@ -32,8 +39,8 @@ class TopHeader extends Component {
               </div>
             </div>
             <div className="col-9 content-end items-center">
-              <div className="toggle-menu">
-                <div className="hamburger"></div>
+              <div className="toggle-menu" onClick={this.toggleButton}>
+                <div className={ this.props.hamburger ? 'hamburger active' : 'hamburger'}></div>
               </div>
               <nav id="menu-nav" className="nav">
                 <ul>
@@ -72,4 +79,14 @@ class TopHeader extends Component {
   }
 }
 
-export default TopHeader;
+const mapStateToProps = (state) => {
+  return {
+    hamburger: state.topMenu,
+  }
+}
+
+const mapDispatchToProps = {
+  toggleMenu,
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TopHeader);
