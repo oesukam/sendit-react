@@ -2,14 +2,12 @@
 @import url('./css/reset-elements.css');
 @import url('./css/grid-layout.css');
 @import url('./css/helpers.css');
-@import url('./css/top-menu.css');
+@import url('./css/color.css');
 
 .main-content {
   padding-top: 110px;
-}
-
-@media only screen and (max-width: 1150px) {
-  .main-content {
-    padding-top: 115px;
-  }
+  padding-bottom: 156px;
+  min-height: 100vh;
+  margin-bottom: -156px;
+  background-color: #fff;
 }
